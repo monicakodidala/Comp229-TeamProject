@@ -10,51 +10,42 @@
 namespace Comp229_TeamProject {
     
     
-    public partial class User {
+    public partial class Books {
         
         /// <summary>
-        /// TextBox1 control.
+        /// Book1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Image Book1;
         
         /// <summary>
-        /// NumLoaned control.
+        /// Book2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NumLoaned;
+        protected global::System.Web.UI.WebControls.Image Book2;
         
         /// <summary>
-        /// Additions control.
+        /// Book4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Additions;
+        protected global::System.Web.UI.WebControls.Image Book4;
         
         /// <summary>
-        /// CurrOwned control.
+        /// Book5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CurrOwned;
-        
-        /// <summary>
-        /// DueDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DueDate;
+        protected global::System.Web.UI.WebControls.Image Book5;
     }
 }
