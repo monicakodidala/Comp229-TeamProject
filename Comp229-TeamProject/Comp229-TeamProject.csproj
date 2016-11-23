@@ -205,6 +205,7 @@
     <Content Include="Assets\Book5.jpg" />
     <Content Include="Assets\freeTickets.png" />
     <Content Include="Assets\KidsWorkshop.jpg" />
+    <Content Include="Assets\logo.jpg" />
     <Content Include="Assets\TeamLogo.png" />
     <Content Include="Assets\workshop.png" />
     <Content Include="Books.aspx" />

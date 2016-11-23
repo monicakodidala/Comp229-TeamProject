@@ -6,10 +6,8 @@
         Home
     </h1>
 
-    <img alt="logo" src="Assets/TeamLogo.png" style="width: 332px; height: 219px" /><asp:Image ID="Image1" runat="server" />
-    <!--img src: http://www.bhe.sd23.bc.ca/ProgramsServices/Library/Pages/default.aspx -->
-    
-    <br />
+    <asp:Image ID="Image1" runat="server" />
+    <img alt="logo" src="Assets/logo.jpg" style="width: 619px; height: 190px" /><!--img src:http://popsop.com/wp-content/uploads/04_11_The-Library_Identity.jpg --><br />
     
     <p>
     <asp:HyperLink ID="hlabout" runat="server">ABOUT</asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;
