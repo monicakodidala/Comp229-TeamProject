@@ -6,8 +6,10 @@
         Home
     </h1>
 
-    <asp:Image ID="Image1" runat="server" />
-    <img alt="logo" src="Assets/logo.jpg" style="width: 619px; height: 190px" /><!--img src:http://popsop.com/wp-content/uploads/04_11_The-Library_Identity.jpg --><br />
+    <img alt="" src="Assets/logo.jpg" style="width: 529px; height: 241px" /><asp:Image ID="Image1" runat="server" />
+    <!--img src: http://popsop.com/wp-content/uploads/04_11_The-Library_Identity.jpg  -->
+    
+    <br />
     
     <p>
     <asp:HyperLink ID="hlabout" runat="server">ABOUT</asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;
