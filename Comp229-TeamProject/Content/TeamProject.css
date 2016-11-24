@@ -13,9 +13,11 @@ body {
 
 .ImageStyles
 {
-    display:block;
+    
     padding-top:30px;
-    margin-left:200px;
-    margin-right:auto;
+    padding-left:30px;
+    width:150px;
+    padding-bottom:30px;
   
 }
+
