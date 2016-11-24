@@ -203,9 +203,14 @@
     <Content Include="Assets\Book2.jpg" />
     <Content Include="Assets\Book4.jpg" />
     <Content Include="Assets\Book5.jpg" />
+    <Content Include="Assets\Call_of_Duty_Cover.jpg" />
+    <Content Include="Assets\Counter-Strike_logo.png" />
+    <Content Include="Assets\Dota-2-logo-wallpapers.jpg" />
     <Content Include="Assets\freeTickets.png" />
+    <Content Include="Assets\Grand_Theft_Auto_V_Logo.png" />
     <Content Include="Assets\KidsWorkshop.jpg" />
     <Content Include="Assets\logo.jpg" />
+    <Content Include="Assets\Riseoftombraiderlogo.png" />
     <Content Include="Assets\TeamLogo.png" />
     <Content Include="Assets\workshop.png" />
     <Content Include="Books.aspx" />
@@ -219,6 +224,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="GamePage.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="RegistrationPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -392,6 +398,13 @@
     </Compile>
     <Compile Include="Books.aspx.designer.cs">
       <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GamePage.aspx.cs">
+      <DependentUpon>GamePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GamePage.aspx.designer.cs">
+      <DependentUpon>GamePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
