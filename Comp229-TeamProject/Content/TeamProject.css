@@ -4,8 +4,18 @@ Student ID: 300920874
 Creation Date: 2016-11-18*/
 
 body {
-    background: url() no-repeat;
+    /*background: url() no-repeat;
     
     background-image: url('../Assets/TeamLogo.png');
     padding-left: 80px;
+    padding-top:80px;*/
+}
+
+.ImageStyles
+{
+    display:block;
+    padding-top:30px;
+    margin-left:200px;
+    margin-right:auto;
+  
 }

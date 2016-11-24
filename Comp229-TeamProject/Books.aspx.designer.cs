@@ -31,6 +31,15 @@ namespace Comp229_TeamProject {
         protected global::System.Web.UI.WebControls.Image Book2;
         
         /// <summary>
+        /// Book3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Book3;
+        
+        /// <summary>
         /// Book4 control.
         /// </summary>
         /// <remarks>

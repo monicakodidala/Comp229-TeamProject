@@ -8,9 +8,15 @@ Creation Date: 2016-11-18--%>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <br />
-    <asp:Image ID="Book1" ImageUrl="~/Assets/Book1.jpg" width="100px" runat="server" />
-    <asp:Image ID="Book2" ImageUrl="~/Assets/Book2.jpg" width="100px" runat="server" />
-    <%--<asp:Image ID="Book3" ImageUrl="~/Assets/Book3.jpg" width="100px" runat="server" />--%>
-    <asp:Image ID="Book4" ImageUrl="~/Assets/Book4.jpg" width="100px" runat="server" />
-    <asp:Image ID="Book5" ImageUrl="~/Assets/Book5.jpg" width="100px" runat="server" />
+    <div>
+    <asp:Image ID="Book1" ImageUrl="~/Assets/Book1.jpg" width="100px" runat="server" CssClass="ImageStyles" />
+    </div>
+    <asp:Image ID="Book2" ImageUrl="~/Assets/Book2.jpg" width="100px" runat="server" CssClass="ImageStyles" />
+    <asp:Image ID="Book3" ImageUrl="~/Assets/Book3.jpg" width="100px" runat="server" CssClass="ImageStyles" />
+    <asp:Image ID="Book4" ImageUrl="~/Assets/Book4.jpg" width="100px" runat="server" CssClass="ImageStyles" />
+    <asp:Image ID="Book5" ImageUrl="~/Assets/Book5.jpg" width="100px" runat="server" CssClass="ImageStyles" />
+
+    <%--<asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="false" ShowFooter="false" PageSize="10">
+        <Columns>
+            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Details">--%>
 </asp:Content>

@@ -198,9 +198,9 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Assets\Book.3.jpg" />
     <Content Include="Assets\Book1.jpg" />
     <Content Include="Assets\Book2.jpg" />
+    <Content Include="Assets\Book3.jpg" />
     <Content Include="Assets\Book4.jpg" />
     <Content Include="Assets\Book5.jpg" />
     <Content Include="Assets\freeTickets.png" />
