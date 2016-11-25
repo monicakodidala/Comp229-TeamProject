@@ -10,7 +10,7 @@
 namespace Comp229_TeamProject {
     
     
-    public partial class Books {
+    public partial class Collection {
         
         /// <summary>
         /// GridViewBooks control.

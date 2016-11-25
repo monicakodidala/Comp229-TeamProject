@@ -1,10 +1,10 @@
-﻿<%--Filename: Books.aspx
+﻿<%--Filename: Collection.aspx
 Authors Name: Venkata Kodithala
 Student ID: 300920874
 Creation Date: 2016-11-18--%>
 
 
-<%@ Page Title="Books" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Books.aspx.cs" Inherits="Comp229_TeamProject.Books" %>
+<%@ Page Title="Collection" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Collection.aspx.cs" Inherits="Comp229_TeamProject.Collection" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <br />
@@ -21,20 +21,20 @@ Creation Date: 2016-11-18--%>
         <Columns>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Cover">
                 <ItemTemplate>
-                    <asp:Image ID="BookCover" ImageUrl='<%# Eval("ImageURL")%>' CssClass="ImageStyles" runat="server">
-                    </asp:Image>
+                    <asp:ImageButton ID="BookCover" ToolTip="Please Click to see Details" ImageUrl='<%# Eval("ImageURL")%>' CssClass="ImageStyles" runat="server" OnClick="BookImg_Click">
+                    </asp:ImageButton>
                 </ItemTemplate>
             </asp:TemplateField>
          
           <asp:BoundField AccessibleHeaderText="Welcome" ControlStyle-Font-Bold="true" ControlStyle-Height="20px" Visible="true" ItemStyle-Font-Size="Medium" ControlStyle-BorderStyle="Ridge" />
 
-            <%--<asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Details">
-                <ItemTemplate>
+            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Details">
+                <%--<ItemTemplate>
                     <asp:Label ID="lblBookTitle" runat="server"
                         Text='<%# String.Format("{0}","{1}","{2}","{3}","{4}", Eval("BookTitle"),Eval("Author"),Eval("ISBN"),
                         Eval("ShortDescription"),Eval("ReviewScore")) %>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>--%>
+                </ItemTemplate>--%>
+            </asp:TemplateField>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Author">
                 <ItemTemplate>
                     <asp:Label ID="lblAuthor" runat="server"
@@ -61,4 +61,6 @@ Creation Date: 2016-11-18--%>
             </asp:TemplateField>
             </Columns>
         </asp:GridView>
+
+     <%-- Displays Game collection for Database--%>
 </asp:Content>
