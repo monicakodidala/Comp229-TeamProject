@@ -36,3 +36,21 @@ input[type="select"] {
         padding: 0;
     }
 }
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus{
+    
+}
+
+.navbar-inverse .navbar-nav > li {
+    font-size: 14px;
+    border-left: 1px solid #454545;
+    border-right: 1px solid #454545;
+    background-color:wheat;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    
+}
+

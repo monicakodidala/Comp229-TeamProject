@@ -12,9 +12,7 @@ namespace Comp229_TeamProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-
-            SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+            SqlConnection connection = new SqlConnection(DatabaseConnection.SqlConnectionString);
             SqlCommand comm = new SqlCommand("SELECT ImageUrl,BookTitle,Author,ISBN,ShortDescription,ReviewScore from Collections", connection);
             try
             {

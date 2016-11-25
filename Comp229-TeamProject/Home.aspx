@@ -14,7 +14,8 @@
         <asp:HyperLink ID="hllocation" runat="server">LOCATION</asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;
     </p>
       <p>
-    <asp:Label ID="lblwelcome" runat="server" Text="Welcome to MSquare Library " style="font-weight: 700; font-size: medium"></asp:Label>
+    <asp:Label ID="lblwelcome" runat="server" Text="Welcome to MSquare Library, please visit our Library Collection " style="font-weight: 700; font-size: medium"></asp:Label>
+          <asp:HyperLink ID="CollectionPage" runat="server" NavigateUrl="~/Collection.aspx">Collection Page</asp:HyperLink>
         </p>
     <p>
          <asp:Label ID="lblsearch" runat="server" Text="Please search your item here: " style="font-weight: 700"></asp:Label>

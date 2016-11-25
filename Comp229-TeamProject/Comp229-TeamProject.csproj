@@ -407,6 +407,7 @@
     <Compile Include="CollectionDetails.aspx.designer.cs">
       <DependentUpon>CollectionDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
