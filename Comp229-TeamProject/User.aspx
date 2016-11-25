@@ -14,9 +14,9 @@ Creation Date: 2016-11-17--%>
     <br />
 
     <h4>Number of Items Loaned</h4><asp:TextBox ID="NumLoaned" Text="Items Loaned" runat="server"></asp:TextBox>
-    <h4>Recent Additions</h4><asp:TextBox ID="Additions" Text="Books" runat="server"></asp:TextBox>
-    <h4>Currently Owned</h4><asp:TextBox ID="CurrOwned" Text="Owing" runat="server"></asp:TextBox>
-    <h4>Due Date</h4><asp:TextBox ID="DueDate" Text="Due Date" runat="server"></asp:TextBox>
+    <h4>Completed Status</h4><asp:TextBox ID="Additions" Text="Books" runat="server"></asp:TextBox>
+    <h4>Currently Owned Items</h4><asp:TextBox ID="CurrOwned" Text="Owing" runat="server"></asp:TextBox>
+   
 
 <br />
 

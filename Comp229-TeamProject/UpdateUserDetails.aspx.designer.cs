@@ -10,42 +10,51 @@
 namespace Comp229_TeamProject {
     
     
-    public partial class User {
+    public partial class UpdateUserDetails {
         
         /// <summary>
-        /// TextBox1 control.
+        /// TxtUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TxtUserName;
         
         /// <summary>
-        /// NumLoaned control.
+        /// TxtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NumLoaned;
+        protected global::System.Web.UI.WebControls.TextBox TxtPassword;
         
         /// <summary>
-        /// Additions control.
+        /// TxtEmailID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Additions;
+        protected global::System.Web.UI.WebControls.TextBox TxtEmailID;
         
         /// <summary>
-        /// CurrOwned control.
+        /// BtnUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CurrOwned;
+        protected global::System.Web.UI.WebControls.Button BtnUpdate;
+        
+        /// <summary>
+        /// BtnCan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnCan;
     }
 }

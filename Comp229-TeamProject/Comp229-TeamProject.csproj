@@ -262,6 +262,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="UpdateCollection.aspx" />
+    <Content Include="UpdateUserDetails.aspx" />
     <Content Include="User.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -455,6 +456,13 @@
     </Compile>
     <Compile Include="UpdateCollection.aspx.designer.cs">
       <DependentUpon>UpdateCollection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUserDetails.aspx.cs">
+      <DependentUpon>UpdateUserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateUserDetails.aspx.designer.cs">
+      <DependentUpon>UpdateUserDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>

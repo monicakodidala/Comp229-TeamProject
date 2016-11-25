@@ -1,4 +1,4 @@
-﻿<%--Filename: CollectionDetails.aspx
+﻿<%--Filename: UpdateCollection.aspx
 Authors Name: Venkata Kodithala
 Student ID: 300920874
 Creation Date: 2016-11-24--%>

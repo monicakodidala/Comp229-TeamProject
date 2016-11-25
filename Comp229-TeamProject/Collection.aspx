@@ -8,13 +8,8 @@ Creation Date: 2016-11-18--%>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <br />
-    <%--<div>
-    <asp:Image ID="Book1" ImageUrl="~/Assets/Book1.jpg" width="100px" runat="server" CssClass="ImageStyles" />
-    </div>
-    <asp:Image ID="Book2" ImageUrl="~/Assets/Book2.jpg" width="100px" runat="server" CssClass="ImageStyles" />
-    <asp:Image ID="Book3" ImageUrl="~/Assets/Book3.jpg" width="100px" runat="server" CssClass="ImageStyles" />
-    <asp:Image ID="Book4" ImageUrl="~/Assets/Book4.jpg" width="100px" runat="server" CssClass="ImageStyles" />
-    <asp:Image ID="Book5" ImageUrl="~/Assets/Book5.jpg" width="100px" runat="server" CssClass="ImageStyles" />--%>
+    
+    <h2>Welcome to our Collection of Books and Games!!!</h2>
 
    <%-- Displays book collection for Database--%>
     <asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="false" ShowFooter="false" PageSize="10">
@@ -28,12 +23,11 @@ Creation Date: 2016-11-18--%>
          
           <asp:BoundField AccessibleHeaderText="Welcome" ControlStyle-Font-Bold="true" ControlStyle-Height="20px" Visible="true" ItemStyle-Font-Size="Medium" ControlStyle-BorderStyle="Ridge" />
 
-            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Details">
-                <%--<ItemTemplate>
+            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Title">
+                <ItemTemplate>
                     <asp:Label ID="lblBookTitle" runat="server"
-                        Text='<%# String.Format("{0}","{1}","{2}","{3}","{4}", Eval("BookTitle"),Eval("Author"),Eval("ISBN"),
-                        Eval("ShortDescription"),Eval("ReviewScore")) %>'></asp:Label>
-                </ItemTemplate>--%>
+                        Text='<%# String.Format("{0}",Eval("BookTitle")) %>'></asp:Label>
+                </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Author">
                 <ItemTemplate>
@@ -62,5 +56,4 @@ Creation Date: 2016-11-18--%>
             </Columns>
         </asp:GridView>
 
-     <%-- Displays Game collection for Database--%>
 </asp:Content>
