@@ -214,7 +214,8 @@
     <Content Include="Assets\Riseoftombraiderlogo.png" />
     <Content Include="Assets\TeamLogo.png" />
     <Content Include="Assets\workshop.png" />
-    <Content Include="Books.aspx" />
+    <Content Include="Collection.aspx" />
+    <Content Include="CollectionDetails.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -392,12 +393,19 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Books.aspx.cs">
-      <DependentUpon>Books.aspx</DependentUpon>
+    <Compile Include="Collection.aspx.cs">
+      <DependentUpon>Collection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Books.aspx.designer.cs">
-      <DependentUpon>Books.aspx</DependentUpon>
+    <Compile Include="Collection.aspx.designer.cs">
+      <DependentUpon>Collection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CollectionDetails.aspx.cs">
+      <DependentUpon>CollectionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CollectionDetails.aspx.designer.cs">
+      <DependentUpon>CollectionDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
