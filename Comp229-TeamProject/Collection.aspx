@@ -16,17 +16,27 @@ Creation Date: 2016-11-18--%>
         <Columns>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Cover">
                 <ItemTemplate>
-                    <asp:ImageButton ID="BookCover" ToolTip="Please Click to see Details" ImageUrl='<%# Eval("ImageURL")%>' CssClass="ImageStyles" runat="server" OnClick="BookImg_Click">
-                    </asp:ImageButton>
+                    <%--<asp:ImageButton ID="BookCover" ToolTip="Please Click to see Details" ImageUrl='<%# Eval("ImageURL")%>' CssClass="ImageStyles" runat="server" OnClick="BookImg_Click">
+                    </asp:ImageButton>--%>
+                    <%--<asp:HyperLink runat="server"
+                NavigateUrl='<%# Eval("CourseID","~/Course.aspx?CourseID={0}") %>'
+                Text='<%# Eval("Title") %>'></asp:HyperLink>--%>
+                    <a href='<%# Eval("CollectionID","CollectionDetails.aspx?CollectionID={0}") %>' title="Please Click to see Details"><img src='<%# Eval("ImageURL")%>' runat="server" class="ImageStyles" /></a>
                 </ItemTemplate>
             </asp:TemplateField>
          
           <asp:BoundField AccessibleHeaderText="Welcome" ControlStyle-Font-Bold="true" ControlStyle-Height="20px" Visible="true" ItemStyle-Font-Size="Medium" ControlStyle-BorderStyle="Ridge" />
 
-            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Title">
+            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Title">
                 <ItemTemplate>
                     <asp:Label ID="lblBookTitle" runat="server"
                         Text='<%# String.Format("{0}",Eval("BookTitle")) %>'></asp:Label>
+                </ItemTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Game Title">
+                <ItemTemplate>
+                    <asp:Label ID="lblGameTitle" runat="server"
+                        Text='<%# String.Format("{0}",Eval("GameTitle")) %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Author">

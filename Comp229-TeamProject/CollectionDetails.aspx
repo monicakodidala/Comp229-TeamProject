@@ -16,7 +16,7 @@ Creation Date: 2016-11-24--%>
     <h4>Review Score:</h4><asp:Label ID="LblRevScore" Text="ReviewScore" runat="server"></asp:Label>
     <h4>Completed Status</h4><asp:Label ID="LblCompStatus" Text="Completed Status" runat="server"></asp:Label>
 
-
+    <asp:HyperLink ID="UpdateLink" runat="server" Text="Update"></asp:HyperLink>
 
 
 

@@ -12,7 +12,13 @@ namespace Comp229_TeamProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string CollectionID = Request.QueryString["CollectionID"];
+            UpdateLink.NavigateUrl = String.Format("~/UpdateCollection.aspx?ID={0}", CollectionID);
+        }
 
+        protected void BtnUpdte_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
