@@ -75,7 +75,10 @@
             </div>
         </div>
         <div class="container body-content">
+            <img alt="logo" src="Assets/LOGO.png" style="width: 400px; height: 400px" />
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+    
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
