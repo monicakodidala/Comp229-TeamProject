@@ -11,10 +11,10 @@ Creation Date: 2016-11-24--%>
 
     <br />
 
-    <asp:Label ID="Title" Text="Title(Name)" runat="server"></asp:Label>
-    <asp:Label ID="ShortDesc" Text="ShortDescription" runat="server"></asp:Label>
-    <asp:Label ID="RevScore" Text="ReviewScore" runat="server"></asp:Label>
-    <asp:Label ID="CompStatus" Text="Completed Status" runat="server"></asp:Label>
+    <h4>Title(Name):</h4><asp:Label ID="LblTitle" Text="Title(Name)" runat="server"></asp:Label>
+    <h4>Short Description:</h4><asp:Label ID="LblShortDesc" Text="ShortDescription" runat="server"></asp:Label>
+    <h4>Review Score:</h4><asp:Label ID="LblRevScore" Text="ReviewScore" runat="server"></asp:Label>
+    <h4>Completed Status</h4><asp:Label ID="LblCompStatus" Text="Completed Status" runat="server"></asp:Label>
 
 
 

@@ -10,42 +10,60 @@
 namespace Comp229_TeamProject {
     
     
-    public partial class CollectionDetails {
+    public partial class UpdateCollection {
         
         /// <summary>
-        /// LblTitle control.
+        /// TxtTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTitle;
+        protected global::System.Web.UI.WebControls.TextBox TxtTitle;
         
         /// <summary>
-        /// LblShortDesc control.
+        /// TxtShortDesc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblShortDesc;
+        protected global::System.Web.UI.WebControls.TextBox TxtShortDesc;
         
         /// <summary>
-        /// LblRevScore control.
+        /// TxtRevScore control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblRevScore;
+        protected global::System.Web.UI.WebControls.TextBox TxtRevScore;
         
         /// <summary>
-        /// LblCompStatus control.
+        /// CompletedList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCompStatus;
+        protected global::System.Web.UI.WebControls.RadioButtonList CompletedList;
+        
+        /// <summary>
+        /// BtnSave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSave;
+        
+        /// <summary>
+        /// BtnCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnCancel;
     }
 }
