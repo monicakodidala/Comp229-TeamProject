@@ -6,6 +6,8 @@ Creation Date: 2016-11-24--%>
 <%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateCollection.aspx.cs" Inherits="Comp229_TeamProject.UpdateCollection" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <%--Collection Details--%>
     <br />
     <h4>Title(Name):</h4><asp:TextBox ID="TxtTitle" runat="server"></asp:TextBox>
     <h4>Short Description:</h4><asp:TextBox ID="TxtShortDesc" runat="server"></asp:TextBox>
@@ -15,10 +17,11 @@ Creation Date: 2016-11-24--%>
         <asp:ListItem Text="Loaned" Value="Loaned"></asp:ListItem>
         <asp:ListItem Text="Wanted" Value="Wanted"></asp:ListItem>
     </asp:RadioButtonList>
-    <br />
+
+    <div>
     <asp:Button ID="BtnSave" Text="Save" runat="server" />
     <asp:Button ID="BtnCancel" Text="Cancel" runat="server" />
- 
+   </div>
         
         
         

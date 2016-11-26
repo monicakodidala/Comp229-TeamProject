@@ -6,6 +6,7 @@ Creation Date: 2016-11-24--%>
 
 <%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateUserDetails.aspx.cs" Inherits="Comp229_TeamProject.UpdateUserDetails" %>
 
+<%--User Details update--%>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <br />
     <h4>UserName:</h4><asp:TextBox ID="TxtUserName" runat="server"></asp:TextBox>

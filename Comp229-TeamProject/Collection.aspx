@@ -11,17 +11,12 @@ Creation Date: 2016-11-18--%>
     
     <h2>Welcome to our Collection of Books and Games!!!</h2>
 
-   <%-- Displays book collection for Database--%>
+   <%-- Displays collection for Database and redirection to collection details on click--%>
     <asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="false" ShowFooter="false" PageSize="10">
         <Columns>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Cover">
                 <ItemTemplate>
-                    <%--<asp:ImageButton ID="BookCover" ToolTip="Please Click to see Details" ImageUrl='<%# Eval("ImageURL")%>' CssClass="ImageStyles" runat="server" OnClick="BookImg_Click">
-                    </asp:ImageButton>--%>
-                    <%--<asp:HyperLink runat="server"
-                NavigateUrl='<%# Eval("CourseID","~/Course.aspx?CourseID={0}") %>'
-                Text='<%# Eval("Title") %>'></asp:HyperLink>--%>
-                    <a href='<%# Eval("CollectionID","CollectionDetails.aspx?CollectionID={0}") %>' title="Please Click to see Details"><img src='<%# Eval("ImageURL")%>' runat="server" class="ImageStyles" /></a>
+                 <a href='<%# Eval("CollectionID","CollectionDetails.aspx?CollectionID={0}") %>' title="Please Click to see Details"><img src='<%# Eval("ImageURL")%>' runat="server" class="ImageStyles" /></a>
                 </ItemTemplate>
             </asp:TemplateField>
          

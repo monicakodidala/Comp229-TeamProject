@@ -8,15 +8,17 @@
 <p>
         
 
-    <p>
+    <%--<p>
     <asp:HyperLink ID="hlabout" runat="server">ABOUT</asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="hlcontact" runat="server">CONTACT</asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="hllocation" runat="server">LOCATION</asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;
     </p>
-      <p>
-    <asp:Label ID="lblwelcome" runat="server" Text="Welcome to MSquare Library, please visit our Library Collection " style="font-weight: 700; font-size: medium"></asp:Label>
+      <p>--%>
+    
+    <asp:Label ID="lblwelcome" runat="server" Text="Welcome to MSquare Library, please visit our Library Collection " style="font-weight: 800; font-size: medium"></asp:Label>
           <asp:HyperLink ID="CollectionPage" runat="server" NavigateUrl="~/Collection.aspx">Collection Page</asp:HyperLink>
         </p>
+    <br />
     <p>
          <asp:Label ID="lblsearch" runat="server" Text="Please search your item here: " style="font-weight: 700"></asp:Label>
         <asp:TextBox ID="txtsearch" runat="server" Width="355px"></asp:TextBox>
@@ -27,8 +29,4 @@
       <img alt="freetickets" src="Assets/freeTickets.png" style="width: 322px; height: 157px" />
       
   </p>
-    
-
-
-
-</asp:Content>
+  </asp:Content>

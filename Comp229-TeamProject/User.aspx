@@ -15,12 +15,5 @@ Creation Date: 2016-11-17--%>
 
     <h4>Number of Items Loaned</h4><asp:TextBox ID="NumLoaned" Text="Items Loaned" runat="server"></asp:TextBox>
     <h4>Completed Status</h4><asp:TextBox ID="Additions" Text="Books" runat="server"></asp:TextBox>
-    <h4>Currently Owned Items</h4><asp:TextBox ID="CurrOwned" Text="Owing" runat="server"></asp:TextBox>
-   
-
-<br />
-
-    <%--<asp:Button ID="Back" Text="Go Back" OnClick="buttonClicked()" runat="server" />--%>
-    
-
+    <h4>Currently Owned Items</h4><asp:TextBox ID="CurrOwned" Text="Owing" runat="server"></asp:TextBox>  
 </asp:Content>

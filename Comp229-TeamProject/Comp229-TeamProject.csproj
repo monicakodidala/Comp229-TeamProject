@@ -198,6 +198,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Assets\Background.jpg" />
     <Content Include="Assets\Book1.jpg" />
     <Content Include="Assets\Book2.jpg" />
     <Content Include="Assets\Book3.jpg" />
@@ -209,10 +210,8 @@
     <Content Include="Assets\freeTickets.png" />
     <Content Include="Assets\Grand_Theft_Auto_V_Logo.png" />
     <Content Include="Assets\KidsWorkshop.jpg" />
-    <Content Include="Assets\logo.jpg" />
     <Content Include="Assets\LOGO.png" />
     <Content Include="Assets\Riseoftombraiderlogo.png" />
-    <Content Include="Assets\TeamLogo.png" />
     <Content Include="Assets\workshop.png" />
     <Content Include="Collection.aspx" />
     <Content Include="CollectionDetails.aspx" />
