@@ -24,6 +24,7 @@
         <asp:TextBox ID="txtsearch" runat="server" Width="355px"></asp:TextBox>
     </p>
   <p>
+      <!--buttonImagesto real webpage-->
       <img alt="workshop" src="Assets/workshop.png" style="width: 202px; height: 250px" />
       <img alt="kidsworkshop" src="Assets/KidsWorkshop.jpg" style="width: 255px; height: 197px" />
       <img alt="freetickets" src="Assets/freeTickets.png" style="width: 322px; height: 157px" />
