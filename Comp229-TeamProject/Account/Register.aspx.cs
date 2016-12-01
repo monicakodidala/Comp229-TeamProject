@@ -14,23 +14,40 @@ namespace Comp229_TeamProject.Account
     {
         protected void CreateUser_Click(object sender, EventArgs e)
         {
-            //Inserts user info with registration date to the database and redirects to login page after registration
+            //Checks for duplicate email id in the database
             SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
-            SqlCommand comm = new SqlCommand("INSERT INTO Users(LastName, FirstName,Password,EmailID,RegistrationDate) VALUES('" + TxtLastname.Text + "', '" + TxtFirstname.Text + "','" + Password.Text + "','" + Email.Text + "','" + DateTime.Now + "'); ", connection);
-            try
-            {
-                connection.Open();
-                comm.ExecuteNonQuery();
+            SqlCommand comm = new SqlCommand("Select * from [dbo].[Users] where EmailID= '" + Email.Text + "'",connection);
 
-                connection.Close();
-            }
-            catch (Exception ex)
+
+
+            comm.Connection.Open();
+            int count = (int)comm.ExecuteScalar();
+            comm.Connection.Close();
+
+            if (count > 0)
             {
-                throw ex;
+                lblEmailError.Text = "Email Id already Exists";
+                lblEmailError.Visible = true;
             }
-            finally
+            else
             {
-                Response.Redirect("Login.aspx");  
+                //Inserts user info with registration date to the database and redirects to login page after registration
+                SqlCommand comm1 = new SqlCommand("INSERT INTO Users(LastName, FirstName,Password,EmailID,RegistrationDate) VALUES('" + TxtLastname.Text + "', '" + TxtFirstname.Text + "','" + Password.Text + "','" + Email.Text + "','" + DateTime.Now + "'); ", connection);
+                try
+                {
+                    connection.Open();
+                    comm1.ExecuteNonQuery();
+
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    Response.Redirect("Login.aspx");
+                }
             }
         }
     }

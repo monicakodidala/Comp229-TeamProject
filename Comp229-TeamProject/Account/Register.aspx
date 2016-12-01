@@ -1,4 +1,9 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Comp229_TeamProject.Account.Register" %>
+﻿<%--Filename: Register.aspx
+Authors Name: Venkata Kodithala
+Student ID: 300920874
+Creation Date: 2016-11-30--%>
+
+<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Comp229_TeamProject.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %>.</h2>
@@ -17,6 +22,8 @@
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
                     CssClass="text-danger" ErrorMessage="The email field is required." />
             </div>
+            <asp:Label runat="server" ID="lblEmailError" Visible="false" ForeColor="Red"></asp:Label>
+        </div>
         </div>
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>

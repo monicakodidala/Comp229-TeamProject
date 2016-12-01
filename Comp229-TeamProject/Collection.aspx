@@ -22,19 +22,19 @@ Creation Date: 2016-11-18--%>
          
           <asp:BoundField AccessibleHeaderText="Welcome" ControlStyle-Font-Bold="true" ControlStyle-Height="20px" Visible="true" ItemStyle-Font-Size="Medium" ControlStyle-BorderStyle="Ridge" />
 
-            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Title">
+            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Title">
                 <ItemTemplate>
                     <asp:Label ID="lblBookTitle" runat="server"
-                        Text='<%# String.Format("{0}",Eval("BookTitle")) %>'></asp:Label>
+                        Text='<%# String.Format("{0}",Eval("Title")) %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Game Title">
+         <%--   <asp:TemplateField ItemStyle-Width="200px" HeaderText="Game Title">
                 <ItemTemplate>
                     <asp:Label ID="lblGameTitle" runat="server"
                         Text='<%# String.Format("{0}",Eval("GameTitle")) %>'></asp:Label>
                 </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Author">
+            </asp:TemplateField>--%>
+         <%--   <asp:TemplateField ItemStyle-Width="200px" HeaderText="Author">
                 <ItemTemplate>
                     <asp:Label ID="lblAuthor" runat="server"
                         Text='<%# String.Format("{0}", Eval("Author")) %>'></asp:Label>
@@ -45,19 +45,19 @@ Creation Date: 2016-11-18--%>
                     <asp:Label ID="lblISBN" runat="server"
                         Text='<%# String.Format("{0}", Eval("ISBN")) %>'></asp:Label>
                 </ItemTemplate>
-            </asp:TemplateField>
+            </asp:TemplateField>--%>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Short Description">
                 <ItemTemplate>
                     <asp:Label ID="lblShortDescription" runat="server"
                         Text='<%# String.Format("{0}", Eval("ShortDescription")) %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField ItemStyle-Width="200px" HeaderText="Review Score">
+           <%-- <asp:TemplateField ItemStyle-Width="200px" HeaderText="Review Score">
                 <ItemTemplate>
                     <asp:Label ID="lblReviewScore" runat="server"
                         Text='<%# String.Format("{0}", Eval("ReviewScore")) %>'></asp:Label>
                 </ItemTemplate>
-            </asp:TemplateField>
+            </asp:TemplateField>--%>
             </Columns>
         </asp:GridView>
 
