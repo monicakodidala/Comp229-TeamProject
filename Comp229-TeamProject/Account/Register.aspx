@@ -36,10 +36,27 @@
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
             </div>
         </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
+        <div>
+            <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="TxtLastname" CssClass="col-md-2 control-label">Last Name</asp:Label>
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="TxtLastname" CssClass="form-control" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="TxtLastname"
+                        CssClass="text-danger" ErrorMessage="Please Enter your Last Name." />
+                </div>
+            </div>
+             <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="TxtFirstname" CssClass="col-md-2 control-label">First Name</asp:Label>
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="TxtFirstname" CssClass="form-control" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="TxtFirstname"
+                        CssClass="text-danger" ErrorMessage="Please Enter you First Name." />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
+                </div>
             </div>
         </div>
-    </div>
 </asp:Content>
