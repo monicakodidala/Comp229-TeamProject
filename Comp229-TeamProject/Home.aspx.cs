@@ -11,7 +11,27 @@ namespace Comp229_TeamProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
+        }
 
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("http://www.torontopubliclibrary.ca/programs-and-classes/ ");
+        }
+
+        protected void LibraryWorkshop_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("http://www.torontopubliclibrary.ca/programs-and-classes/");
+        }
+
+        protected void KidsWorkshop_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("http://www.torontopubliclibrary.ca/kidsspace/programsandeventsadu.html");
+        }
+
+        protected void FreeTickets_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("http://www.torontopubliclibrary.ca/museum-arts-passes/");
         }
     }
 }

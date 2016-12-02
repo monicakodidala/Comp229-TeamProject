@@ -20,14 +20,26 @@
         </p>
     <br />
     <p>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <asp:Label ID="lblsearch" runat="server" Text="Please search your item here: " style="font-weight: 700"></asp:Label>
         <asp:TextBox ID="txtsearch" runat="server" Width="355px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" Text="Enter" />
+         
     </p>
-  <p>
-      <!--buttonImagesto real webpage-->
-      <img alt="workshop" src="Assets/workshop.png" style="width: 202px; height: 250px" />
-      <img alt="kidsworkshop" src="Assets/KidsWorkshop.jpg" style="width: 255px; height: 197px" />
-      <img alt="freetickets" src="Assets/freeTickets.png" style="width: 322px; height: 157px" />
-      
-  </p>
+<p>
+    <!--buttonImagesto real webpage-->
+    <asp:ImageButton ID="LibraryWorkshop" runat="server" ImageUrl="~/Assets/Libraryworkshop.png" OnClick="LibraryWorkshop_Click"  />
+
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  
+    <asp:ImageButton ID="KidsWorkshop" runat="server" Height="228px" ImageUrl="~/Assets/KidsWorkshop.jpg" Width="277px" OnClick="KidsWorkshop_Click" />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <asp:ImageButton ID="FreeTickets" runat="server" ImageUrl="~/Assets/freeTickets.png" Height="196px" OnClick="FreeTickets_Click" Width="337px" />
+
+   </p>
   </asp:Content>
