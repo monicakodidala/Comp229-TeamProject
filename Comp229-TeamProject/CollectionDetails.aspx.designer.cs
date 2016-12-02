@@ -22,31 +22,40 @@ namespace Comp229_TeamProject {
         protected global::System.Web.UI.WebControls.Label LblTitle;
         
         /// <summary>
-        /// LblShortDesc control.
+        /// LblAuthor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblShortDesc;
+        protected global::System.Web.UI.WebControls.Label LblAuthor;
         
         /// <summary>
-        /// LblRevScore control.
+        /// LblISBN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblRevScore;
+        protected global::System.Web.UI.WebControls.Label LblISBN;
         
         /// <summary>
-        /// LblCompStatus control.
+        /// LblShortDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCompStatus;
+        protected global::System.Web.UI.WebControls.Label LblShortDescription;
+        
+        /// <summary>
+        /// LblReviewScore control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblReviewScore;
         
         /// <summary>
         /// UpdateLink control.
