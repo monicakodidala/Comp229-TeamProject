@@ -10,7 +10,7 @@ namespace Comp229_TeamProject
 {
     public partial class UpdateCollection : System.Web.UI.Page
     {
-        //Gets information from database and binds the data.Done by Venkata
+        //Gets information from database and binds the data
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +24,7 @@ namespace Comp229_TeamProject
                 {
                     connection.Open();
                     SqlDataReader reader = comm.ExecuteReader();
-                    //Binds the data. Done by Venkata
+                    //Binds the data.
                     while (reader.Read())
                     {
                         TxtTitle.Text = (reader["Title"] == null) ? string.Empty : reader["Title"].ToString();

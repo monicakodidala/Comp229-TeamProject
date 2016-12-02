@@ -1,4 +1,9 @@
-﻿<%@ Page Title="Log in" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Comp229_TeamProject.Account.Login" Async="true" %>
+﻿<%--Filename: Login.aspx
+Authors Name: Venkata Kodithala used default login code 
+Student ID: 300920874
+Creation Date: 2016-12-02--%>
+
+<%@ Page Title="Log in" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Comp229_TeamProject.Account.Login" Async="true" %>
 
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 

@@ -1,5 +1,5 @@
 ﻿<%--Filename: Register.aspx
-Authors Name: Venkata Kodithala
+Authors Name: Venkata Kodithala used defaulf register page and added lastname, firstname controls
 Student ID: 300920874
 Creation Date: 2016-11-30--%>
 

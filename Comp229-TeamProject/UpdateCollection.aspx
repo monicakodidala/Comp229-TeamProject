@@ -9,6 +9,8 @@ Creation Date: 2016-11-24--%>
 
     <%--Collection Details--%>
     <br />
+    <div class="row">
+        <div class="col-md-12">
     <h4>Title(Name):</h4><asp:TextBox ID="TxtTitle" runat="server"></asp:TextBox>
     <h4>Author:</h4><asp:TextBox ID="TxtAuthor" runat="server"></asp:TextBox>
     <h4>Short Description:</h4><asp:TextBox ID="TxtShortDesc" runat="server"></asp:TextBox>
@@ -19,10 +21,12 @@ Creation Date: 2016-11-24--%>
         <asp:ListItem Text="Loaned" Value="2"></asp:ListItem>
         <asp:ListItem Text="Wanted" Value="3"></asp:ListItem>
     </asp:RadioButtonList>
+        </div>
 
-    <div>
+    <div class="col-md-12">
     <asp:Button ID="BtnSave" Text="Save" runat="server" OnClick="BtnSave_Click" />
     <asp:Button ID="BtnCancel" Text="Cancel" runat="server" OnClick="BtnCancel_Click" />
+        </div>
    </div>
         
         

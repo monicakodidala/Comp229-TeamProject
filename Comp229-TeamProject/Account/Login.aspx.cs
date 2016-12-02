@@ -20,6 +20,7 @@ namespace Comp229_TeamProject.Account
         }
         protected void LogIn(object sender, EventArgs e)
         {
+            //this code is from textbook
             Session["username"] = this.Email.Text.Trim();
             Response.Redirect("~/Home.aspx");
             if (FormsAuthentication.Authenticate(Email.Text, Password.Text))

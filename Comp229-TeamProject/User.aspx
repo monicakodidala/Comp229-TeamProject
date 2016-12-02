@@ -11,9 +11,12 @@ Creation Date: 2016-11-17--%>
     <h4>Books</h4><asp:TextBox ID="TextBox1" Text="Enter Book Title/Author Name" runat="server"></asp:TextBox>
 
    <h2>Welcome User!!!</h2>
+    <h2>Please see the details of the items owned by you</h2>
     <br />
 
     <h4>Number of Items Loaned</h4><asp:TextBox ID="NumLoaned" Text="Items Loaned" runat="server"></asp:TextBox>
     <h4>Completed Status</h4><asp:TextBox ID="Additions" Text="Books" runat="server"></asp:TextBox>
     <h4>Currently Owned Items</h4><asp:TextBox ID="CurrOwned" Text="Owing" runat="server"></asp:TextBox>  
+
+    
 </asp:Content>
