@@ -10,7 +10,7 @@
 namespace Comp229_TeamProject {
     
     
-    public partial class _Default {
+    public partial class Home {
         
         /// <summary>
         /// lblwelcome control.

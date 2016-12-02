@@ -10,6 +10,7 @@ namespace Comp229_TeamProject
 {
     public partial class UpdateCollection : System.Web.UI.Page
     {
+        //Gets information from database and binds the data 
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,7 +24,7 @@ namespace Comp229_TeamProject
                 {
                     connection.Open();
                     SqlDataReader reader = comm.ExecuteReader();
-
+                    //Binds the data
                     while (reader.Read())
                     {
                         TxtTitle.Text = (reader["Title"] == null) ? string.Empty : reader["Title"].ToString();
@@ -44,6 +45,7 @@ namespace Comp229_TeamProject
 
         protected void BtnSave_Click(object sender, EventArgs e)
         {
+            //if the page is Valid then updates the information to collection table
             Page.Validate();
             if (Page.IsValid)
             {
@@ -64,7 +66,7 @@ namespace Comp229_TeamProject
                 }
             }
         }
-
+        //ImageClickEventArgs on cancel redirects to collection details with the details of selected item
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
             string CollectionID = Request.QueryString["CollectionID"];

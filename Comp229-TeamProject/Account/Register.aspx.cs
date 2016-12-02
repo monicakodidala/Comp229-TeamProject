@@ -20,11 +20,11 @@ namespace Comp229_TeamProject.Account
 
 
 
-            comm.Connection.Open();
-            int count = (int)comm.ExecuteScalar();
-            comm.Connection.Close();
+            connection.Open();
+            int? count = (int?)comm.ExecuteScalar();
+            connection.Close();
 
-            if (count > 0)
+            if (count != null && count > 0)
             {
                 lblEmailError.Text = "Email Id already Exists";
                 lblEmailError.Visible = true;
