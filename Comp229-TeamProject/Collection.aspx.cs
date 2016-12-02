@@ -13,11 +13,12 @@ namespace Comp229_TeamProject
         protected void Page_Load(object sender, EventArgs e)
         {
             
-
+            //Selects all item details from collection tables
             SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
             SqlCommand comm = new SqlCommand("SELECT * from Collections", connection);
             try
             {
+                //Binds the data and displays 
                 connection.Open();
                 SqlDataReader reader = comm.ExecuteReader();
 

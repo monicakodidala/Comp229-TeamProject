@@ -8,10 +8,14 @@ Creation Date: 2016-11-18--%>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <br />
-    
+    <div class="row">
+        <div class="col-md-12">
     <h2>Welcome to our Collection of Books and Games!!!</h2>
-
+    </div>
+        </div>
    <%-- Displays collection for Database and redirection to collection details on click--%>
+    <div class="row">
+        <div class="col-md-12">
     <asp:GridView ID="GridViewBooks" runat="server" AutoGenerateColumns="false" ShowFooter="false" PageSize="10">
         <Columns>
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Book Cover">
@@ -27,38 +31,15 @@ Creation Date: 2016-11-18--%>
                     <asp:Label ID="lblBookTitle" runat="server"
                         Text='<%# String.Format("{0}",Eval("Title")) %>'></asp:Label>
                 </ItemTemplate>
-            </asp:TemplateField>
-         <%--   <asp:TemplateField ItemStyle-Width="200px" HeaderText="Game Title">
-                <ItemTemplate>
-                    <asp:Label ID="lblGameTitle" runat="server"
-                        Text='<%# String.Format("{0}",Eval("GameTitle")) %>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>--%>
-         <%--   <asp:TemplateField ItemStyle-Width="200px" HeaderText="Author">
-                <ItemTemplate>
-                    <asp:Label ID="lblAuthor" runat="server"
-                        Text='<%# String.Format("{0}", Eval("Author")) %>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField ItemStyle-Width="200px" HeaderText="ISBN">
-                <ItemTemplate>
-                    <asp:Label ID="lblISBN" runat="server"
-                        Text='<%# String.Format("{0}", Eval("ISBN")) %>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>--%>
+            </asp:TemplateField>         
             <asp:TemplateField ItemStyle-Width="200px" HeaderText="Short Description">
                 <ItemTemplate>
                     <asp:Label ID="lblShortDescription" runat="server"
                         Text='<%# String.Format("{0}", Eval("ShortDescription")) %>'></asp:Label>
                 </ItemTemplate>
-            </asp:TemplateField>
-           <%-- <asp:TemplateField ItemStyle-Width="200px" HeaderText="Review Score">
-                <ItemTemplate>
-                    <asp:Label ID="lblReviewScore" runat="server"
-                        Text='<%# String.Format("{0}", Eval("ReviewScore")) %>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>--%>
+            </asp:TemplateField>           
             </Columns>
         </asp:GridView>
-
+        </div>
+        </div>
 </asp:Content>
