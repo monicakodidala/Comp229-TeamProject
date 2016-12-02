@@ -12,6 +12,7 @@ namespace Comp229_TeamProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Gets collection details based on the item and redirects to respective collection item update page on clicking update
             string CollectionID = Request.QueryString["CollectionID"];
             UpdateLink.NavigateUrl = String.Format("~/UpdateCollection.aspx?CollectionID={0}", CollectionID);
             SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");

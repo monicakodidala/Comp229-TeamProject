@@ -12,7 +12,7 @@ namespace Comp229_TeamProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Gets 3 recently added items from the collections table
+            //Gets 3 recently added items from the collections table done by Venkata
             SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
             SqlCommand comm = new SqlCommand("Select top 3 Title,CollectionID,ImageURL from Collections order by DateAdded DESC", connection);
             try
@@ -31,7 +31,7 @@ namespace Comp229_TeamProject
                 throw ex;
             }
         }
-
+        //External links to images. Done by Muntafia
         protected void LibraryWorkshop_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("http://www.torontopubliclibrary.ca/programs-and-classes/");

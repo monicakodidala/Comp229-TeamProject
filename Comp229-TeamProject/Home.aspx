@@ -6,7 +6,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-lr-12">
+        <div class="col-md-8">
             <h1>Home
             </h1>
 
@@ -46,7 +46,7 @@
         </div>
         <br />
         <div class="row">
-            <div class="col-lr-12">
+            <div class="col-md-12">
                 <asp:Repeater ID="Books1" runat="server">
 
                     <HeaderTemplate>
