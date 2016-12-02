@@ -1,6 +1,6 @@
 ﻿
 <%--Recent added  items display done by Venkata (300920874)--%>
-<!---Home Page Done by Muntafia (300790371)---> 
+<%---Home Page Done by Muntafia (300790371)---%>
 
 <%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Comp229_TeamProject._Default" %>
 
