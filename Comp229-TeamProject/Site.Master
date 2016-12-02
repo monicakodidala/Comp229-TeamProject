@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-     <%-- Our Custom StyleSheet referenced here--%>
+     <%-- Our Custom StyleSheet referenced here done by Venkata--%>
     <link rel="stylesheet" type="text/css" href="Content/TeamProject.css"/>
 </head>
 <body>

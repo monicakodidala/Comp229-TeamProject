@@ -44,9 +44,9 @@ input[type="select"] {
 
 .navbar-inverse .navbar-nav > li {
     font-size: 14px;
-    border-left: 1px solid #454545;
-    border-right: 1px solid #454545;
-    background-color:wheat;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    background-color:black;
 }
 
 .navbar-brand {

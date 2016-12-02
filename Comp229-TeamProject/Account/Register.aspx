@@ -10,7 +10,7 @@ Creation Date: 2016-11-30--%>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
-
+    <%--Displays all controls required for login.Done by Venkata--%>
     <div class="form-horizontal">
         <h4>Create a new account</h4>
         <hr />

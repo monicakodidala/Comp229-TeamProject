@@ -31,24 +31,6 @@ namespace Comp229_TeamProject {
         protected global::System.Web.UI.WebControls.HyperLink CollectionPage;
         
         /// <summary>
-        /// lblsearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblsearch;
-        
-        /// <summary>
-        /// txtsearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsearch;
-        
-        /// <summary>
         /// LibraryWorkshop control.
         /// </summary>
         /// <remarks>
