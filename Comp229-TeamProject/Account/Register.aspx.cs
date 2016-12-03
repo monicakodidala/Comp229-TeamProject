@@ -15,7 +15,7 @@ namespace Comp229_TeamProject.Account
         protected void CreateUser_Click(object sender, EventArgs e)
         {
             //Checks for duplicate email id in the database
-            SqlConnection connection = new SqlConnection("Server = localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Server = Localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
             SqlCommand comm = new SqlCommand("Select * from [dbo].[Users] where EmailID= '" + Email.Text + "'",connection);
 
 

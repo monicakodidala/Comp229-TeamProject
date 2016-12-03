@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="container body-content">
-            <img alt="logo" src="Assets/LOGO.png" id="bannerImg"/>
+            <img alt="logo" src="/Assets/LOGO.png" id="bannerImg"/>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
 
     

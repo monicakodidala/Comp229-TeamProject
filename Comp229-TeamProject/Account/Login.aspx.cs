@@ -22,7 +22,7 @@ namespace Comp229_TeamProject.Account
         {
             //this code is from textbook
             Session["username"] = this.Email.Text.Trim();
-            Response.Redirect("~/Home.aspx");
+            //Response.Redirect("~/Home.aspx");
             if (FormsAuthentication.Authenticate(Email.Text, Password.Text))
             {
                 FormsAuthentication.RedirectFromLoginPage(Email.Text, true);

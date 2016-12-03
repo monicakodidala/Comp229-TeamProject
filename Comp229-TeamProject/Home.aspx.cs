@@ -13,7 +13,7 @@ namespace Comp229_TeamProject
         protected void Page_Load(object sender, EventArgs e)
         {
             //Gets 3 recently added items from the collections table done by Venkata
-            SqlConnection connection = new SqlConnection("Server = localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Server = Localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
             SqlCommand comm = new SqlCommand("Select top 3 Title,CollectionID,ImageURL from Collections order by DateAdded DESC", connection);
             try
             {

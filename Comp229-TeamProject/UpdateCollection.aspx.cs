@@ -18,7 +18,7 @@ namespace Comp229_TeamProject
             {
                 string CollectionID = Request.QueryString["CollectionID"];
 
-                SqlConnection connection = new SqlConnection("Server = localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+                SqlConnection connection = new SqlConnection("Server = Localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
                 SqlCommand comm = new SqlCommand("SELECT * from Collections where CollectionID= '" + CollectionID + "'", connection);
                 try
                 {
@@ -31,7 +31,7 @@ namespace Comp229_TeamProject
                         TxtAuthor.Text = (reader["Author"] == null) ? string.Empty : reader["Author"].ToString();
                         TxtShortDesc.Text = (reader["ShortDescription"] == null) ? string.Empty : reader["ShortDescription"].ToString();
                         TxtRevScore.Text = (reader["ReviewScore"] == null) ? string.Empty : reader["ReviewScore"].ToString();
-                        CompletedList.SelectedIndex = (reader["CompletedStatusID"] == null) ? -1 : Convert.ToInt32(reader["CompletedStatusID"]);
+                        CompletedList.SelectedIndex = (reader["CompletedStatusID"] == null) ? -1 : Convert.ToInt32(reader["CompletedStatusID"]) - 1;
                     }
 
                     connection.Close();
@@ -50,7 +50,7 @@ namespace Comp229_TeamProject
             if (Page.IsValid)
             {
                 string CollectionID = Request.QueryString["CollectionID"];
-                SqlConnection connection = new SqlConnection("Server = localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+                SqlConnection connection = new SqlConnection("Server = Localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
                 SqlCommand comm = new SqlCommand("Update Collections set Title='" + TxtTitle.Text + "', Author='" + TxtAuthor.Text + "', ShortDescription='" + TxtShortDesc.Text + "',ReviewScore='" + TxtRevScore.Text + "',CompletedStatusID='" + CompletedList.SelectedItem.Value + "' Where CollectionID='" + CollectionID + "'", connection);
                 
                 try
@@ -63,6 +63,10 @@ namespace Comp229_TeamProject
                 catch (Exception ex)
                 {
                     throw ex;
+                }
+                finally
+                {
+                    Response.Redirect(String.Concat("CollectionDetails.aspx?CollectionID=", CollectionID));
                 }
             }
         }

@@ -14,7 +14,7 @@ namespace Comp229_TeamProject
         {
             
             //Selects all item details from collection tables
-            SqlConnection connection = new SqlConnection("Server = localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Server = Localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
             SqlCommand comm = new SqlCommand("SELECT * from Collections", connection);
             try
             {
