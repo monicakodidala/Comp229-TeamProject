@@ -14,8 +14,8 @@ namespace Comp229_TeamProject.Account
     {
         protected void CreateUser_Click(object sender, EventArgs e)
         {
-            //Checks for duplicate email id in the database.Done by Venkata
-            SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+            //Checks for duplicate email id in the database
+            SqlConnection connection = new SqlConnection("Server = localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
             SqlCommand comm = new SqlCommand("Select * from [dbo].[Users] where EmailID= '" + Email.Text + "'",connection);
 
 
@@ -31,7 +31,7 @@ namespace Comp229_TeamProject.Account
             }
             else
             {
-                //Inserts user info with registration date to the database and redirects to login page after registration.Done by Venkata
+                //Inserts user info with registration date to the database and redirects to login page after registration
                 SqlCommand comm1 = new SqlCommand("INSERT INTO Users(LastName, FirstName,Password,EmailID,RegistrationDate) VALUES('" + TxtLastname.Text + "', '" + TxtFirstname.Text + "','" + Password.Text + "','" + Email.Text + "','" + DateTime.Now + "'); ", connection);
                 try
                 {

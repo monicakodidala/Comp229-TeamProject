@@ -15,7 +15,7 @@ namespace Comp229_TeamProject
             //Gets collection details based on the item and redirects to respective collection item update page on clicking update
             string CollectionID = Request.QueryString["CollectionID"];
             UpdateLink.NavigateUrl = String.Format("~/UpdateCollection.aspx?CollectionID={0}", CollectionID);
-            SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Server = localhost\\SQLEXPRESS;Database = Comp229TeamProject;Integrated Security=True");
             SqlCommand comm = new SqlCommand("SELECT * from Collections where CollectionID= '" + CollectionID + "'", connection);
             try
             {
